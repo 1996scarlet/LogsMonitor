@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Logs Monitor</string>
+    <string name="restart">重新下载日志</string>
+    <string name="log_today">查看今天的日志</string>
+</resources>
