@@ -20,7 +20,7 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    val todayPath = "${Environment.getExternalStorageDirectory().path}/LogsMonitor/OldLogs/${Date(System.currentTimeMillis()).stringFormat("yyyy-MM-dd")}.log"
+    private val todayPath = "${Environment.getExternalStorageDirectory().path}/LogsMonitor/OldLogs/${Date(System.currentTimeMillis()).stringFormat("yyyy-MM-dd")}.log"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

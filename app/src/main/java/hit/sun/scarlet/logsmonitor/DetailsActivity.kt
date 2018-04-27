@@ -35,7 +35,10 @@ class DetailsActivity : AppCompatActivity() {
         logLines.forEach {
             val cells = it.split(" ")
 
-            val logString = "攻击时间：${cells[0]} ${cells[1]}\n攻击IP-端口：${cells[3]}-${cells[4]}\n攻击类型：${cells[7]} ${cells[8]} ${cells[10]}\n"
+            var str = ""
+            for (i in 9 until cells.size-1) str += cells[i] + " "
+
+            val logString = "攻击时间：${cells[0]} ${cells[1]}\n攻击IP-端口：${cells[3]}-${cells[4]}\n攻击类型：${cells[7]}-${cells[8]}\n攻击描述：$str\n"
 
             logItems.add(logString)
         }
