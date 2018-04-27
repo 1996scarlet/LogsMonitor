@@ -34,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         today.setOnClickListener {
             startActivity(Intent(applicationContext, DetailsActivity::class.java).putExtra("path", todayPath))
         }
+
+        val startIntent = Intent(this, ListeningService::class.java)
+        startService(startIntent)
     }
 
     private fun initDictionary() {
